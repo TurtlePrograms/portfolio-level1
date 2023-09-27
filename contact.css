@@ -1,0 +1,75 @@
+:root {
+    --text: #000000;
+    /* Black text color */
+    --primary-bg: #4D9078;
+    /* Teal background color */
+    --navbar-bg: #5FAD56;
+    /* Green background color */
+    --navbar-hover: #F2C14E;
+    /* Yellow hover color */
+    --navbar-selected: #F78154;
+    /* Red-Orange selected color */
+    --timeline-bg: #072736;
+    /* Dark blue background for timeline */
+    --timeline-text: #fff;
+    /* White text color for timeline */
+    --timeline-item-bg: #4D9078;
+    /* Teal background for timeline items on hover */
+    --timeline-item-border: #B4436C;
+    /* Border color for timeline items */
+    --timeline-item-circle: #F78154;
+    /* Circle color for timeline items */
+    --timeline-item-circle-hover: #0F0;
+    /* Circle color on hover for timeline items */
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--primary-bg);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: var(--navbar-bg);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--navbar-hover);
+}
+
+.container {
+    border-radius: 5px;
+    background-color: var(--navbar-bg);
+    padding: 20px;
+}
+
+.bericht{
+    height:200px;
+    min-height: 2rem;
+}
+
+.whitespace {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

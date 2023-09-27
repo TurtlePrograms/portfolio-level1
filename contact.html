@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>project pagina david - contact</title>
+  <link rel="icon" type="image/png" href="Media/icons/contact16.png" />
+  <link rel="stylesheet" href="algemeen.css">
+  <link rel="stylesheet" href="contact.css">
+  <div class="navbar" id="test">
+    <img class="logo" src="Media/Selfie (square).jpg">
+    <a href="index.html">Home</a>
+    <a href="projecten.html">projecten</a>
+    <a class="selected" href="contact.html">contact</a>
+  </div>
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <div class="wrapper">
+    <h1>David van Hoek</h1>
+    <div class="container">
+      <form action="https://formspree.io/f/mwkdqrbv" method="POST">
+        <label for="mail">Email</label>
+        <input type="email" id="mail" name="Email" placeholder="Your Email.." required>
+
+        <div id="whitespace">
+          <pre>
+            </pre>
+        </div>
+
+        <label for="subject">message</label>
+        <textarea id="bericht" name="message" placeholder="Write something.."  required></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+.photo {
+  float: right;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .photo {
+    width: 40vw;
+
+  }
+}
+
+
+
+.code {
+  display: inline-block;
+  background-color: #1d2229;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  font-family: "Courier New", monospace;
+  max-width: 66vw;
+  color: white;
+  min-width: min-content;
+}
+
+#projectbutton{
+  float: left;
+  font-size: 16px;
+  color: var(--text);
+  background-color: green;
+  text-align: center;
+  padding: 14px 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;  
+}
+
+#contactbutton{
+  float: left;
+  font-size: 16px;
+  color: var(--text);
+  background-color: green;
+  text-align: center;
+  padding: 14px 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;  
+}
+
+#runbutton {
+  float: left;
+  font-size: 16px;
+  color: var(--text);
+  background-color: green;
+  text-align: center;
+  padding: 14px 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;  
+}
+
+#stop {
+  float: left;
+}
+
+#stop img {
+  height: 10px;
+  width: 10px;
+}
+.keyword {
+  color: #ff7085;
+}
+
+.string {
+  color: #ffeda1;
+}
+
+.int {
+  color: #8fffdb;
+}
+
+.enginetype {
+  color: #8fffdb;
+}
+
+.function {
+  color: #66e6ff;
+}
+
+
+.globalfunc {
+  color: #a3a3f5;
+}
+
+.comment {
+  color: #cdcfd280;
+}

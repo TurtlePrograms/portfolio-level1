@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project pagina david - profiel</title>
+    <link rel="icon" type="image/png" href="Media/icons/profile16.png" />
+    <link rel="stylesheet" href="algemeen.css">
+    <link rel="stylesheet" href="index.css">
+    <div class="navbar" id="test">
+        <img class="logo" src="Media/Selfie (square).jpg">
+        <a class='selected' href="index.html">Home</a>
+        <a href="projecten.html">projecten</a>
+        <a href="contact.html">contact</a>
+    </div>
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <div class="wrapper">
+        <div>
+            <div>
+                <div id="text">
+                    <div class="code">
+                        <button id="stop" style="display: none;"><a href="index.html"><img
+                                    src="Media/icons/stop.png"></a></button>
+
+                        <!-- fakes the gdscript -->
+                        <pre>
+
+<span class="keyword">extends</span> <span class="enginetype">Control</span>
+<!-- 'sets' the variables -->
+<span class="keyword">var</span> <span class="variable">Name</span> = <span class="string">"David van Hoek"</span>
+<span class="keyword">var</span> <span class="variable">Age</span> = <span class="int">16</span>
+<span class="keyword">var</span> <span class="variable">Image</span> = <span class="globalfunc">preload</span>(<span class="string">"res://Images/me.png"</span>)
+
+<span class="keyword">func</span> <span class="function">_ready()</span>:
+    <span class="variable">image</span>.<span class="function">show()</span>
+
+<span class="keyword">func</span> <span class="function">_on_projecten_button_pressed</span>():
+    <span class="function">get_tree()</span>.<span class="function">change_scene_to_file</span>(<span class="string">"res://html/projecten"</span>)
+<span class="comment">#test</span>
+<span class="keyword">func</span> <span class="function">_on_contact_button_pressed</span>():
+    <span class="function">get_tree()</span>.<span class="function">change_scene_to_file</span>(<span class="string">"res://html/contact"</span>)
+
+</pre>
+                        <button id="runbutton" onclick="showImage()">run</button>
+                        <a id="projectbutton" href="projecten.html">projecten</a>
+                        <a id="contactbutton" href="contact.html">contact</a>
+                    </div>
+                    <img id="selfie" class="photo" src="Media/Selfie (Small).jpg" style="display: none;">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+</body>
+
+</html>
