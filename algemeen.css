@@ -36,7 +36,7 @@
   background-color: var(--navbar-bg);
   height: 45px;
   width: max-content;
-  border-radius: 25px;
+  border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -65,7 +65,7 @@
   height: max-content;
   object-fit: contain;
   float: left;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 /* base for body */
 body {
