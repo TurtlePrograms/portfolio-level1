@@ -1,8 +1,8 @@
 function checkWindowSize() {
-    // Get the element with class 'navbar'
+    //gets the navbar element
     const navbarElement = document.querySelector('.navbar');
   
-    // Check if the element exists on the page
+    // Check if the 'navbar' element exists
     if (navbarElement) {
       // Get the width of the 'navbar' element
       const navbarWidth = navbarElement.getBoundingClientRect().width;
@@ -27,5 +27,5 @@ function checkWindowSize() {
   // Call the function to check the window size
   checkWindowSize();
   
-  // You can also listen for window resize events to recheck whenever the window is resized
+  // Add an event listener that waits for the window to resize
   window.addEventListener('resize', checkWindowSize)

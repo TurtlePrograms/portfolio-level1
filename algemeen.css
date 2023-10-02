@@ -23,13 +23,13 @@
   /* Circle color on hover for timeline items */
 }
 
-/* set all text to the right color and to the left */
+/* set all text to the correct color and to the left */
 :is(h1, h2, h3, h4, h5, h6, p) {
   text-align: left;
   color: var(--text);
 }
 
-/* css vor the navbar */
+/* css for the navbar */
 .navbar {
   margin-top: 10px;
   overflow: hidden;

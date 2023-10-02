@@ -1,9 +1,11 @@
+/* moves the selfie picture to the right */
 .photo {
   float: right;
   margin-left: 20px;
   margin-right: 20px;
 }
 
+/* makes the image smaller on smaller screens */
 @media only screen and (max-width: 900px) {
   .photo {
     width: 40vw;
@@ -12,7 +14,7 @@
 }
 
 
-
+/* setup background and ground rules for the code blcok */
 .code {
   display: inline-block;
   background-color: #1d2229;
@@ -25,7 +27,10 @@
   min-width: min-content;
 }
 
-#projectbutton{
+/* shows the buttons on the codeblock */
+#runbutton,
+#contactbutton,
+#projectbutton {
   float: left;
   font-size: 16px;
   color: var(--text);
@@ -34,33 +39,10 @@
   padding: 14px 16px;
   margin-left: 5px;
   margin-right: 5px;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
-#contactbutton{
-  float: left;
-  font-size: 16px;
-  color: var(--text);
-  background-color: green;
-  text-align: center;
-  padding: 14px 16px;
-  margin-left: 5px;
-  margin-right: 5px;
-  text-decoration: none;  
-}
-
-#runbutton {
-  float: left;
-  font-size: 16px;
-  color: var(--text);
-  background-color: green;
-  text-align: center;
-  padding: 14px 16px;
-  margin-left: 5px;
-  margin-right: 5px;
-  text-decoration: none;  
-}
-
+/* button that 'stops' the code block */
 #stop {
   float: left;
 }
@@ -69,6 +51,8 @@
   height: 10px;
   width: 10px;
 }
+
+/* give each section in the code block the correct color */
 .keyword {
   color: #ff7085;
 }
