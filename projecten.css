@@ -1,26 +1,25 @@
-/* timeline element */
+/* default styles */
 .timeline {
     width: 95vw;
     background-color: var(--navbar-bg);
     color: var(--text);
     padding: 30px 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    /* margin-left: 5vw; */
 }
-/* list settings */
+
 .timeline ul {
     list-style-type: none;
     border-left: 2px solid var(--timeline-item-border);
     padding: 10px 5px;
 }
-/* list item settings */
+
 .timeline ul li {
     padding: 20px 20px;
     position: relative;
     cursor: pointer;
     transition: 0.5s;
 }
-/* timeline date block */
+
 .timeline ul li span {
     display: inline-block;
     background-color: var(--navbar-selected);
@@ -29,18 +28,18 @@
     font-size: 15px;
     text-align: center;
 }
-/* timeline title */
+
 .timeline ul li .content h3 {
     color: var(--navbar-hover);
     font-size: 17px;
     padding-top: 5px;
 }
-/* timeline text */
+
 .timeline ul li .content p {
     padding: 5px 0px 15px 0px;
     font-size: 15px;
 }
-/* circle on timeline */
+
 .timeline ul li:before {
     position: absolute;
     content: '';
@@ -52,33 +51,20 @@
     top: 28px;
     transition: 0.5s;
 }
-/* show what is currently being hovered in timeline */
+
 .timeline ul li:hover {
     background-color: var(--timeline-item-bg);
 }
-/* change circle color when hover */
+
 .timeline ul li:hover:before {
     background-color: var(--timeline-item-circle-hover);
     box-shadow: 0px 0px 10px 2px var(--timeline-item-circle-hover);
 }
-/* makes timeline full width when screen gets to small */
-@media (max-width: 700px) {
-    .timeline {
-        width: 100%;
-        padding: 30px 5px 30px 10px;
-    }
 
-    .timeline ul li .content h3 {
-        color: var(--navbar-hover);
-        font-size: 15px;
-    }
-}
-
-/* shows the image(s) next to the text */
 .pic {
     position: relative;
     max-height: 90%;
-    width: 30%; 
+    width: 30%;
     margin-left: 50px;
 }
 
@@ -89,11 +75,112 @@ li {
     position: relative;
 }
 
-.github{
-    width: 10%;
+.github {
+    width: 5vh;
     height: auto;
 }
 
-.datum{
+.datum {
     padding-right: 10px;
+}
+
+/* media queries for responsiveness */
+@media only screen and (max-width: 700px) {
+    .timeline {
+        width: 100%;
+        padding: 1vw 1vh;
+    }
+
+    .timeline ul {
+        padding: 10px 5px;
+    }
+
+    .timeline ul li {
+        padding: 20px 20px;
+    }
+
+    .timeline ul li span {
+        font-size: 15px;
+    }
+
+    .timeline ul li .content h3 {
+        font-size: 17px;
+    }
+
+    .timeline ul li .content p {
+        font-size: 15px;
+    }
+
+    .timeline ul li:before {
+        left: -6px;
+        top: 20px;
+    }
+
+    .pic {
+        width: auto;
+        max-height: 20vh;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    li {
+        flex-direction: column;
+    }
+
+    .github {
+        width: 10%;
+    }
+
+    .datum {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 701px) {
+    .timeline {
+        width: 95vw;
+        padding: 30px 20px;
+    }
+
+    .timeline ul {
+        padding: 10px 5px;
+    }
+
+    .timeline ul li {
+        padding: 20px 20px;
+    }
+
+    .timeline ul li span {
+        font-size: 15px;
+    }
+
+    .timeline ul li .content h3 {
+        font-size: 17px;
+    }
+
+    .timeline ul li .content p {
+        font-size: 15px;
+    }
+
+    .timeline ul li:before {
+        left: -11px;
+        top: 28px;
+    }
+
+    .pic {
+        width: 30%;
+        margin-left: 50px;
+    }
+
+    li {
+        flex-direction: row;
+    }
+
+    .github {
+        width: 5vh;
+    }
+
+    .datum {
+        padding-right: 10px;
+    }
 }
