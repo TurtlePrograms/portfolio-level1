@@ -54,6 +54,9 @@
 
 .timeline ul li:hover {
     background-color: var(--timeline-item-bg);
+    .github{
+        border: 1px solid var(--navbar-bg)
+    }
 }
 
 .timeline ul li:hover:before {
@@ -132,7 +135,16 @@ li {
     }
 
     .datum {
+        text-decoration: none;
         display: block;
+    }
+
+    .description,
+    .description:link,
+    .description:visited,
+    .description:hover,
+    .description:active {
+        text-decoration: none;
     }
 }
 
@@ -178,9 +190,12 @@ li {
 
     .github {
         width: 5vh;
+        
     }
 
     .datum {
         padding-right: 10px;
+        text-decoration: none;
     }
+
 }
