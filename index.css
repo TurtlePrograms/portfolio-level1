@@ -1,83 +1,62 @@
-/* moves the selfie picture to the right */
-.photo {
-  float: right;
-  margin-left: 20px;
-  margin-right: 20px;
-}
+@media (min-width: 768px) {
+  .container {
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "selfie about-me bonus bonus"
+      "selfie about-me bonus bonus"
+      "other other other other"
+      "other other other other";
+  }
 
-/* makes the image smaller on smaller screens */
-@media only screen and (max-width: 900px) {
-  .photo {
-    width: 40vw;
+  .about-me {
+    grid-area: about-me;
+  }
+
+  .selfie {
+    grid-area: selfie;  
+    img{
+      max-width: 30vw;
+      height: auto;
+    }
+  }
+
+  .other {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: other;
+  }
+
+  .projects {
+    grid-area: 1 / 1 / 2 / 4;
+    a{
+      text-decoration: underline;
+      color: black;
+    }
+  }
+
+  .contact {
+    grid-area: 2 / 1 / 3 / 4;
+    a{
+      text-decoration: underline;
+      color: black;
+    }
+  }
+
+  .duck {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  .bonus {
+    grid-area: bonus;
 
   }
-}
 
-
-/* setup background and ground rules for the code blcok */
-.code {
-  display: inline-block;
-  background-color: #1d2229;
-  padding: 10px;
-  border: 1px solid #444;
-  border-radius: 5px;
-  font-family: "Courier New", monospace;
-  max-width: 66vw;
-  color: white;
-  min-width: min-content;
-}
-
-/* shows the buttons on the codeblock */
-#runbutton,
-#contactbutton,
-#projectbutton {
-  float: left;
-  font-size: 16px;
-  color: var(--text);
-  background-color: green;
-  text-align: center;
-  padding: 14px 16px;
-  margin-left: 5px;
-  margin-right: 5px;
-  text-decoration: none;
-}
-
-/* button that 'stops' the code block */
-#stop {
-  float: left;
-}
-
-#stop img {
-  height: 10px;
-  width: 10px;
-}
-
-/* give each section in the code block the correct color */
-.keyword {
-  color: #ff7085;
-}
-
-.string {
-  color: #ffeda1;
-}
-
-.int {
-  color: #8fffdb;
-}
-
-.enginetype {
-  color: #8fffdb;
-}
-
-.function {
-  color: #66e6ff;
-}
-
-
-.globalfunc {
-  color: #a3a3f5;
-}
-
-.comment {
-  color: #cdcfd280;
 }

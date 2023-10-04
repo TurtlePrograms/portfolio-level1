@@ -13,61 +13,43 @@
 </head>
 
 <body>
-
     <div class="navbar" id="test">
-        <img class="logo" src="Media/Selfie (square).jpg">
+        <img class="logo" src="Media/Selfie (Large) Trans.png">
         <a class='selected' href="index.html">Home</a>
         <a href="projecten.html">projecten</a>
         <a href="contact.html">contact</a>
         <img id="duck" class="logo" src="Media/icons/ducks/rubber-duck.png">
     </div>
-    <div class="wrapper">
-        <div>
-            <div>
-                <div id="text">
-                    <div class="code">
-                        <button id="stop" style="display: none;"><a href="index.html"><img
-                                    src="Media/icons/stop.png"></a></button>
-
-                        <!-- fakes the gdscript -->
-                        <pre>
-
-<span class="keyword">extends</span> <span class="enginetype">Control</span>
-<!-- 'sets' the variables -->
-<span class="keyword">var</span> <span class="variable">Name</span> = <span class="string">"David van Hoek"</span>
-<span class="keyword">var</span> <span class="variable">Age</span> = <span class="int">16</span>
-<span class="keyword">var</span> <span class="variable">Image</span> = <span class="globalfunc">preload</span>(<span class="string">"res://Images/me.png"</span>)
-
-<span class="keyword">func</span> <span class="function">_ready()</span>:
-    <span class="variable">Image</span>.<span class="function">show()</span>
-
-<span class="keyword">func</span> <span class="function">_on_projecten_button_pressed</span>():
-    <span class="function">get_tree()</span>.<span class="function">change_scene_to_file</span>(<span class="string">"res://html/projecten"</span>)
-<span class="comment">#test</span>
-<span class="keyword">func</span> <span class="function">_on_contact_button_pressed</span>():
-    <span class="function">get_tree()</span>.<span class="function">change_scene_to_file</span>(<span class="string">"res://html/contact"</span>)
-
-</pre>
-                        <a id="runbutton" onclick="showImage()">run</a>
-                        <a id="projectbutton" href="projecten.html">projecten</a>
-                        <a id="contactbutton" href="contact.html">contact</a>
-                    </div>
-                    <img id="selfie" class="photo" src="Media/Selfie (Small).jpg" style="display: none;">
+    <div class="container">
+        <div class="about-me">
+            <p id="age"></p>
+        </div>
+        <div class="selfie">
+            <img src="Media/Selfie (Large) Trans.png">
+        </div>
+        <div class="other">
+            <div class="projects">
+                <h3>Projecten</h3>
+                <p>ik heb gewerk aan verschillende projecten, de eerste is <a href="projecten.html">TechnoWire</a></p>
+            </div>
+            <div class="contact">U kunt contact opnemen met mij via <a href="contact.html">e-mail</a></div>
+            <div class="duck">
+                <div class="duckcontainer" style="display: none;">
+                    <div class="duck-body"></div>
+                    <div class="feather"></div>
+                    <div class="eye"></div>
+                    <div class="beak"></div>
+                    <div class="leg"></div>
                 </div>
-
             </div>
         </div>
-
+        <div class="bonus">
+            <video width="320" height="240" autoplay muted loop>
+                <source src="Media/test.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
 
-    </div>
-    <div class="duckcontainer" style="display: none;">
-        <div class="duck-body"></div>
-        <div class="feather"></div>
-        <div class="eye"></div>
-        <div class="beak"></div>
-        <div class="leg"></div>
-    </div>
     <script src="index.js"></script>
     <script src="script.js"></script>
 </body>
