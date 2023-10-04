@@ -1,26 +1,16 @@
 :root {
   --text: #000000;
   /* Black text color */
-  --primary-bg: #4D9078;
-  /* Teal background color */
+  --primary-bg: #4d9078;
+  /* background color */
+  --secundary-bg: #3d6f5f;
+  /* background color */
   --navbar-bg: #5FAD56;
   /* Green background color */
   --navbar-hover: #F2C14E;
   /* Yellow hover color */
   --navbar-selected: #F78154;
   /* Red-Orange selected color */
-  --timeline-bg: #072736;
-  /* Dark blue background for timeline */
-  --timeline-text: #fff;
-  /* White text color for timeline */
-  --timeline-item-bg: #4D9078;
-  /* Teal background for timeline items on hover */
-  --timeline-item-border: #B4436C;
-  /* Border color for timeline items */
-  --timeline-item-circle: #F78154;
-  /* Circle color for timeline items */
-  --timeline-item-circle-hover: #0F0;
-  /* Circle color on hover for timeline items */
 }
 
 /* set all text to the correct color and to the left */
@@ -77,9 +67,12 @@ body {
   
 }
 
-
 .wrapper{
   margin-left: 1vw;
   margin-right: 1vw;
   margin-top: 2vw;
+}
+
+.duckcontainer{
+  display: none;
 }
