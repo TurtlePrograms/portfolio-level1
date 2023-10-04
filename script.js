@@ -31,6 +31,41 @@ checkWindowSize();
 window.addEventListener('resize', checkWindowSize)
 
 
+//list
+function rearrangeTiles() {
+  const tilesWrap = document.querySelector('.tilesWrap');
+
+  if (tilesWrap === null) {
+    return;
+  }
+
+  const items = Array.from(tilesWrap.querySelectorAll('li'));
+  // Clear the existing content of the container
+  tilesWrap.innerHTML = '';
+
+  // Create a new row container
+  let row = document.createElement('ul');
+  row.classList.add('tilesRow');
+
+  // Append each item to the row, limiting to 3 items per row
+  items.forEach((item, index) => {
+    if (index % 3 === 0 && index > 0) {
+      // Start a new row
+      tilesWrap.appendChild(row);
+      row = document.createElement('ul');
+      row.classList.add('tilesRow');
+    }
+    row.appendChild(item);
+  });
+
+  // Append the last row if it's not empty
+  if (row.children.length > 0) {
+    tilesWrap.appendChild(row);
+  }
+}
+
+// Call the function to rearrange the tiles
+rearrangeTiles();
 
 
 //DUCK :)
@@ -51,6 +86,7 @@ duckImage.addEventListener("click", function () {
     }, 2000);
   } else if (clickCount === 5) {
     // If the duck is clicked 5 times in quick succession
+    console.log(duck[0].style.display)
     console.log("Duck clicked 5 times in quick succession!");
     if (duck[0].style.display === "none") {
       duck[0].style.display = "block";
