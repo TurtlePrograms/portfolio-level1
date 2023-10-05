@@ -3,7 +3,8 @@
 .duckcontainer {
     height: 500px;
     width: 420px;
-    position: absolute;
+    position: relative;
+    float: right;
     bottom: 0;
     right: 0;
     display: none;

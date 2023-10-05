@@ -1,83 +1,99 @@
-/* moves the selfie picture to the right */
-.photo {
-  float: right;
-  margin-left: 20px;
-  margin-right: 20px;
-}
+/* small screen */
+@media (max-width: 767px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "selfie selfie"
+      "about-me about-me"
+      "projecten projecten"
+      "contact contact";
+  }
 
-/* makes the image smaller on smaller screens */
-@media only screen and (max-width: 900px) {
-  .photo {
-    width: 40vw;
+  .about-me {
+    grid-area: about-me;
+    border-style: solid none solid none;
+    border-width: 2px;
+    border-color: var(--secundary-bg);
+  }
 
+  .selfie {
+    grid-area: selfie;
+    border-style: solid none solid none;
+    border-width: 2px;
+    border-color: var(--secundary-bg);
+
+    img {
+      max-width: 25vw;
+    }
+  }
+
+  .contact {
+    grid-area: contact;
+    border-style: solid none solid none;
+    border-width: 2px;
+    border-color: var(--secundary-bg);
+  }
+
+  .projecten {
+    grid-area: projecten;
+    border-style: solid none solid none;
+    border-width: 2px;
+    border-color: var(--secundary-bg);
   }
 }
 
 
-/* setup background and ground rules for the code blcok */
-.code {
-  display: inline-block;
-  background-color: #1d2229;
-  padding: 10px;
-  border: 1px solid #444;
-  border-radius: 5px;
-  font-family: "Courier New", monospace;
-  max-width: 66vw;
-  color: white;
-  min-width: min-content;
-}
+/* big screen */
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "selfie about-me projecten contact"
+      "selfie about-me projecten contact";
+  }
 
-/* shows the buttons on the codeblock */
-#runbutton,
-#contactbutton,
-#projectbutton {
-  float: left;
-  font-size: 16px;
-  color: var(--text);
-  background-color: green;
-  text-align: center;
-  padding: 14px 16px;
-  margin-left: 5px;
-  margin-right: 5px;
-  text-decoration: none;
-}
+  .about-me {
+    grid-area: about-me;
+    border-style: none solid none solid;
+    border-width: 2px;
+    border-color: var(--secundary-bg);
+    padding: 5px 5px 5px 5px;
+  }
 
-/* button that 'stops' the code block */
-#stop {
-  float: left;
-}
+  .selfie {
+    grid-area: selfie;
+    border-style: none solid none none;
+    border-width: 2px;
+    border-color: var(--secundary-bg);
 
-#stop img {
-  height: 10px;
-  width: 10px;
-}
+    img {
+      max-width: 25vw;
+    }
+  }
 
-/* give each section in the code block the correct color */
-.keyword {
-  color: #ff7085;
-}
+  .contact {
+    grid-area: contact;
+    border-style: none none none solid;
+    border-width: 2px;
+    border-color: var(--secundary-bg);
+    padding: 5px 5px 5px 5px;
+  }
 
-.string {
-  color: #ffeda1;
-}
-
-.int {
-  color: #8fffdb;
-}
-
-.enginetype {
-  color: #8fffdb;
-}
-
-.function {
-  color: #66e6ff;
-}
+  .projecten {
+    grid-area: projecten;
+    border-style: none solid none solid;
+    border-width: 2px;
+    border-color: var(--secundary-bg);
+    padding: 5px 5px 5px 5px;
+  }
 
 
-.globalfunc {
-  color: #a3a3f5;
-}
-
-.comment {
-  color: #cdcfd280;
 }
