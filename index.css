@@ -1,66 +1,99 @@
-@media (min-width: 768px) {
+/* small screen */
+@media (max-width: 767px) {
   .container {
-    margin-top: 2vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "selfie about-me bonus bonus"
-      "selfie about-me bonus bonus"
-      "other other other other"
-      "other other other other";
+      "selfie selfie"
+      "about-me about-me"
+      "projecten projecten"
+      "contact contact";
   }
 
   .about-me {
     grid-area: about-me;
+    border-style: solid none solid none;
+    border-width: 2px;
+    border-color: var(--secundary-bg);
   }
 
   .selfie {
     grid-area: selfie;
+    border-style: solid none solid none;
+    border-width: 2px;
+    border-color: var(--secundary-bg);
 
     img {
-      max-width: 30vw;
-      height: auto;
-    }
-  }
-
-  .other {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-area: other;
-  }
-
-  .projects {
-    size: fit-content;
-    grid-area: 1 / 1 / 2 / 4;
-
-    a {
-      text-decoration: underline;
-      color: black;
+      max-width: 25vw;
     }
   }
 
   .contact {
-    grid-area: 2 / 1 / 3 / 4;
+    grid-area: contact;
+    border-style: solid none solid none;
+    border-width: 2px;
+    border-color: var(--secundary-bg);
+  }
 
-    a {
-      text-decoration: underline;
-      color: black;
+  .projecten {
+    grid-area: projecten;
+    border-style: solid none solid none;
+    border-width: 2px;
+    border-color: var(--secundary-bg);
+  }
+}
+
+
+/* big screen */
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "selfie about-me projecten contact"
+      "selfie about-me projecten contact";
+  }
+
+  .about-me {
+    grid-area: about-me;
+    border-style: none solid none solid;
+    border-width: 2px;
+    border-color: var(--secundary-bg);
+    padding: 5px 5px 5px 5px;
+  }
+
+  .selfie {
+    grid-area: selfie;
+    border-style: none solid none none;
+    border-width: 2px;
+    border-color: var(--secundary-bg);
+
+    img {
+      max-width: 25vw;
     }
   }
 
-  .duck {
-    grid-area: 2 / 3 / 3 / 4;
+  .contact {
+    grid-area: contact;
+    border-style: none none none solid;
+    border-width: 2px;
+    border-color: var(--secundary-bg);
+    padding: 5px 5px 5px 5px;
   }
 
-  .bonus {
-    grid-area: bonus;
-
+  .projecten {
+    grid-area: projecten;
+    border-style: none solid none solid;
+    border-width: 2px;
+    border-color: var(--secundary-bg);
+    padding: 5px 5px 5px 5px;
   }
+
 
 }
