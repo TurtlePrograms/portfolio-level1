@@ -49,6 +49,9 @@
 
 /* big screen */
 @media (min-width: 768px) {
+  body{
+    margin: 0px 0px 0px 0px;
+  }
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -58,11 +61,12 @@
     grid-template-areas:
       "selfie about-me projecten contact"
       "selfie about-me projecten contact";
+    padding-top: 10px;
   }
 
   .about-me {
     grid-area: about-me;
-    border-style: none solid none solid;
+    border-style: solid solid none solid;
     border-width: 2px;
     border-color: var(--secundary-bg);
     padding: 5px 5px 5px 5px;
@@ -70,7 +74,7 @@
 
   .selfie {
     grid-area: selfie;
-    border-style: none solid none none;
+    border-style: solid solid none none;
     border-width: 2px;
     border-color: var(--secundary-bg);
 
@@ -81,7 +85,7 @@
 
   .contact {
     grid-area: contact;
-    border-style: none none none solid;
+    border-style: solid none none solid;
     border-width: 2px;
     border-color: var(--secundary-bg);
     padding: 5px 5px 5px 5px;
@@ -89,7 +93,7 @@
 
   .projecten {
     grid-area: projecten;
-    border-style: none solid none solid;
+    border-style: solid solid none solid;
     border-width: 2px;
     border-color: var(--secundary-bg);
     padding: 5px 5px 5px 5px;

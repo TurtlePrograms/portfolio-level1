@@ -39,7 +39,8 @@ textarea {
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical;    /*- Enables vertical resizing of the element*/
+    resize: vertical;
+    /*- Enables vertical resizing of the element*/
 }
 
 input[type=submit] {
@@ -48,12 +49,14 @@ input[type=submit] {
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
-    cursor: pointer;/*updates the curser for the button*/
+    cursor: pointer;
+    /*updates the curser for the button*/
 }
 
 input[type=submit]:hover {
     background-color: var(--navbar-hover);
 }
+
 /*create the box for the form*/
 .container {
     border-radius: 5px;
@@ -61,8 +64,8 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
-.bericht{
-    height:200px;
+.bericht {
+    height: 200px;
     min-height: 2rem;
 }
 
@@ -70,3 +73,10 @@ input[type=submit]:hover {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+#linkedin {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 10%;
+}
+
