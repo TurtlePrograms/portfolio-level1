@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     <div class="navbar" id="test">
         <img class="logo" src="Media/Selfie (Large) Trans.png">
         <a class='selected' href="index.html">Home</a>
@@ -22,15 +23,38 @@
     </div>
     <div class="container">
         <div class="about-me">
-            <h1>Over mij</h1>
+            <a href="index.html">
+                <h1>Over mij</h1>
+            </a>
             <p id="age"></p>
         </div>
         <div class="selfie"><img src="Media/Selfie (Large) Trans.png"></div>
         <div class="contact">
-            <h1>Contact</h1>
-            U kunt contact opnemen met mij via <a href="contact.html">e-mail</a></div>
+            <a href="contact.html">
+                <h1>Contact</h1>
+            </a>
+            U kunt contact opnemen met mij via
+            <div class="form">
+                <form action="https://formspree.io/f/mwkdqrbv" method="POST">
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" name="Email" placeholder="Your Email.." required>
+
+                    <label for="subject">message</label>
+                    <textarea id="bericht" name="message" placeholder="Write something.." required></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark"
+                data-type="VERTICAL" data-vanity="david-van-hoek" data-version="v1"><a
+                    class="badge-base__link LI-simple-link"
+                    href="https://nl.linkedin.com/in/david-van-hoek?trk=profile-badge"></a></div>
+
+        </div>
         <div class="projecten">
-            <h1>Projecten</h1>
+            <a href="projecten.html">
+                <h1>Projecten</h1>
+            </a>
             <p>ik heb gewerk aan verschillende projecten, de eerste is <a href="projecten.html">TechnoWire</a></p>
         </div>
     </div>
@@ -53,6 +77,7 @@
 
     <script src="javascript/index.js"></script>
     <script src="javascript/script.js"></script>
+    
 </body>
 
 </html>

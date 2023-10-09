@@ -19,6 +19,10 @@
   color: var(--text);
 }
 
+a {
+  text-decoration: none;
+}
+
 /* css for the navbar */
 .navbar {
   margin-top: 10px;
@@ -70,12 +74,12 @@ body {
 
 }
 
-  .wrapper {
-    margin-left: 1vw;
-    margin-right: 1vw;
-    margin-top: 2vw;
-  }
+.wrapper {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 2vw;
+}
 
-  .duckcontainer {
-    display: none;
-  }
+.duckcontainer {
+  display: none;
+}
