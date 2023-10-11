@@ -4,6 +4,11 @@
 * {
     box-sizing: border-box;
 }
+.wrapper{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
 
 /* This selects all input fields of type text, all select elements, and all textareas on the page and applies the following styles:*/
 input[type=text],
@@ -39,6 +44,7 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: var(--navbar-bg);
     padding: 20px;
+    max-width: 100%;
 }
 
 .bericht {
