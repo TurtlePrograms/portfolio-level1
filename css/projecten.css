@@ -143,7 +143,7 @@ body {
     span{
         background-color: var(--navbar-hover);
         padding: 5px 10px;
-        border: 2px solid var(--navbar-selected);
+        border: 2px solid var(--secundary-bg);
     }
 }
 
