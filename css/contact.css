@@ -1,0 +1,65 @@
+
+
+/*sets the sizing calculation to include the border*/
+* {
+    box-sizing: border-box;
+}
+.wrapper{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+/* This selects all input fields of type text, all select elements, and all textareas on the page and applies the following styles:*/
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--primary-bg);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    /*- Enables vertical resizing of the element*/
+}
+
+input[type=submit] {
+    background-color: var(--navbar-bg);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /*updates the curser for the button*/
+}
+
+input[type=submit]:hover {
+    background-color: var(--navbar-hover);
+}
+
+/*create the box for the form*/
+.container {
+    border-radius: 5px;
+    background-color: var(--navbar-bg);
+    padding: 20px;
+    max-width: 100%;
+}
+
+.bericht {
+    height: 200px;
+    min-height: 2rem;
+}
+
+.whitespace {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#linkedin {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 10%;
+}
+

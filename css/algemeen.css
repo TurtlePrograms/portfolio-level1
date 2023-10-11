@@ -1,22 +1,23 @@
 :root {
-  --text: #000000;
-  /* Black text color */
-  --primary-bg: #4d9078;
-  /* background color */
-  --secundary-bg: #3d6f5f;
-  /* background color */
-  --navbar-bg: #5FAD56;
-  /* Green background color */
-  --navbar-hover: #F2C14E;
-  /* Yellow hover color */
-  --navbar-selected: #F78154;
-  /* Red-Orange selected color */
+  --text: #263238; /* Dark Blue-Grey text color */
+  --primary-bg: #388E3C; /* Green background color */
+  --secondary-bg: #FFE082; /* Yellow background color */
+  --navbar-bg: #4CAF50; /* Leafy Green background color */
+  --navbar-hover: #FFD54F; /* Sunflower Yellow hover color */
+  --navbar-selected: #EF5350; /* Tomato Red selected color */
+  --grad-main: var(--navbar-bg); /* Gradient start color */
+  --grad-secundair: var(--navbar-bg); /* Gradient end color */
 }
+
 
 /* set all text to the correct color and to the left */
 :is(h1, h2, h3, h4, h5, h6, p) {
   text-align: left;
   color: var(--text);
+}
+
+a {
+  text-decoration: none;
 }
 
 /* css for the navbar */
@@ -30,6 +31,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 /* css for navbar buttons */
 .navbar a {
   float: left;
@@ -49,30 +51,32 @@
 .navbar a.selected {
   background-color: var(--navbar-selected);
 }
+
 /* css for the logo in the navbar */
 .logo {
-  width: 45px; 
+  width: 45px;
   height: max-content;
   object-fit: contain;
   float: left;
   border-radius: 5px;
 }
+
 /* base for body */
 body {
-  background-color: var(--primary-bg); 
+  background-color: var(--primary-bg);
   background-attachment: fixed;
   font-family: Arial, Helvetica, sans-serif;
   min-width: 99vw;
   min-height: 99vh;
-  
+
 }
 
-.wrapper{
+.wrapper {
   margin-left: 1vw;
   margin-right: 1vw;
   margin-top: 2vw;
 }
 
-.duckcontainer{
+.duckcontainer {
   display: none;
 }

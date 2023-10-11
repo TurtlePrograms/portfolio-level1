@@ -51,7 +51,7 @@ body {
     color: var(--text);
     margin-top: 5px;
 }
-
+/* hides button */
 .tilesWrap li button {
     background: transparent;
     border: 1px solid var(--text);
@@ -69,7 +69,7 @@ body {
     max-width: 15px;
     max-height: 15px;
 }
-
+/* setup hover for  buttons */
 .tilesWrap li button:before {
     content: '';
     position: absolute;
@@ -84,20 +84,22 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
+/* moves button into view when card is hovered */
 .tilesWrap li:hover button {
     transform: translateY(5px);
     opacity: 1;
 }
-
+/* changes background when button hovered */
 .tilesWrap li button:hover {
     background-color: var(--primary-bg);
 }
 
+/* moves button background into view when button is hovered */
 .tilesWrap li button:hover:before {
     left: 0;
     opacity: 1;
 }
-
+/* moves title into view when card is hovered */
 .tilesWrap li:hover h2 {
     top: 0px;
     opacity: 0.6;
@@ -122,14 +124,30 @@ body {
 
 /*Applies a gradient background to every odd child element of the list items inside the .tilesWrap element.*/
 .tilesWrap li:nth-child(odd):before {
-    background: var(--navbar-selected);
-    background: -webkit-linear-gradient(to right, var(--navbar-hover), var(--navbar-selected));
-    background: linear-gradient(to right, var(--navbar-hover), var(--navbar-selected));
+    background: var(--grad-main);
+    background: -webkit-linear-gradient(to right, var(--grad-main), var(--grad-secundair));
+    background: linear-gradient(to right, var(--grad-main), var(--grad-secundair));
 }
 
 /*Applies a gradient background to  every even child element of the list items inside the .tilesWrap element.*/
 .tilesWrap li:nth-child(even):before {
-    background: var(--navbar-bg);
-    background: -webkit-linear-gradient(to right, var(--navbar-selected), var(--navbar-bg));
-    background: linear-gradient(to right, var(--navbar-selected), var(--navbar-bg));
+    background: var(--grad-main);
+    background: -webkit-linear-gradient(to right, var(--grad-secundair), var(--grad-main));
+    background: linear-gradient(to right, var(--grad-secundair), var(--grad-main));
+}
+
+
+/* tags styling */
+.tags{
+    transition: all 0.3s ease-in-out;
+    span{
+        background-color: var(--navbar-hover);
+        padding: 5px 10px;
+        border: 2px solid var(--navbar-selected);
+    }
+}
+
+.tilesWrap li:hover .tags{
+    opacity: 0;
+    transform: translateY(40px);
 }

@@ -49,20 +49,26 @@
 
 /* big screen */
 @media (min-width: 768px) {
+  body{
+    margin: 0px 0px 0px 0px;
+  }
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "selfie about-me projecten contact"
-      "selfie about-me projecten contact";
+      ". selfie about-me ."
+      ". selfie about-me ."
+      ". projecten contact ."
+      ". projecten contact .";
+    padding-top: 10px;
   }
 
   .about-me {
     grid-area: about-me;
-    border-style: none solid none solid;
+    border-style: solid none none solid;
     border-width: 2px;
     border-color: var(--secundary-bg);
     padding: 5px 5px 5px 5px;
@@ -70,7 +76,7 @@
 
   .selfie {
     grid-area: selfie;
-    border-style: none solid none none;
+    border-style: solid none none none;
     border-width: 2px;
     border-color: var(--secundary-bg);
 
@@ -81,7 +87,7 @@
 
   .contact {
     grid-area: contact;
-    border-style: none none none solid;
+    border-style: solid none solid solid;
     border-width: 2px;
     border-color: var(--secundary-bg);
     padding: 5px 5px 5px 5px;
@@ -89,11 +95,51 @@
 
   .projecten {
     grid-area: projecten;
-    border-style: none solid none solid;
+    border-style: solid none solid none;
     border-width: 2px;
     border-color: var(--secundary-bg);
     padding: 5px 5px 5px 5px;
   }
+  /* This selects all input fields of type text, all select elements, and all textareas on the page and applies the following styles:*/
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--primary-bg);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    /*- Enables vertical resizing of the element*/
+}
+
+input[type=submit] {
+    background-color: var(--navbar-bg);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /*updates the curser for the button*/
+}
+
+input[type=submit]:hover {
+    background-color: var(--navbar-hover);
+}
+
+/*create the box for the form*/
+.form {
+    border-radius: 5px;
+    background-color: var(--navbar-bg);
+    padding: 20px;
+}
+
+.bericht {
+    height: 200px;
+    min-height: 2rem;
+}
 
 
 }
