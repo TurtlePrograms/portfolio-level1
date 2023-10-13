@@ -19,7 +19,7 @@ body {
     position: relative;
     vertical-align: top;
     margin: 10px;
-    min-height: 30vh;
+    min-height: 40vh;
     background: var(--secundary-bg);
     border: 1px solid var(--text);
     text-align: left;
@@ -35,6 +35,7 @@ body {
     right: 10px;
     transition: all 0.3s ease-in-out;
     color: var(--text);
+    margin-bottom: 30px;
 }
 
 /* card text title */
@@ -42,6 +43,7 @@ body {
     font-size: 20px;
     color: var(--navbar-selected);
     margin-bottom: 5px;
+    margin-top: 50px;
 }
 
 /* card text */
@@ -144,6 +146,11 @@ body {
         background-color: var(--navbar-hover);
         padding: 5px 10px;
         border: 2px solid var(--secundary-bg);
+    }
+    img{
+        margin-top: 10px;
+        max-width: 220px;
+        max-height: 50px;
     }
 }
 
