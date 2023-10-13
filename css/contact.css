@@ -57,11 +57,13 @@ input[type=submit]:hover {
     padding-bottom: 10px;
 }
 
-#linkedin {
+
+.link{
     max-width: 50px;
     max-height: 50px;
     border-radius: 10%;
 }
+
 
 .cv{
     max-width: 50px;
