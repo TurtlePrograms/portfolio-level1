@@ -3,7 +3,7 @@
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: max-content max-content max-content max-content max-content;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -27,7 +27,7 @@
     border-color: var(--secundary-bg);
 
     img {
-      max-width: 25vw;
+      max-height: 20vh;
     }
   }
 
@@ -36,6 +36,9 @@
     border-style: solid none solid none;
     border-width: 2px;
     border-color: var(--secundary-bg);
+    .form{
+      max-width: 90vw;
+    }
   }
 
   .projecten {
@@ -55,14 +58,15 @@
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 2fr 1fr 1fr;
+    grid-template-rows: max-content max-content max-content max-content max-content;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       ". selfie about-me ."
       ". selfie about-me ."
       ". projecten contact ."
-      ". projecten contact .";
+      ". projecten contact ."
+      ". footer footer .";
     padding-top: 10px;
   }
 
@@ -100,6 +104,11 @@
     border-color: var(--secundary-bg);
     padding: 5px 5px 5px 5px;
   }
+  .footer{
+    grid-area: footer;
+    min-height: 100px;
+  }
+
   /* This selects all input fields of type text, all select elements, and all textareas on the page and applies the following styles:*/
 input[type=text],
 select,
