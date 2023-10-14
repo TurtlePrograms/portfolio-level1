@@ -12,7 +12,6 @@
 
 /* This selects all input fields of type text, all select elements, and all textareas on the page and applies the following styles:*/
 input[type=text],
-select,
 textarea {
     width: 100%;
     padding: 12px;

@@ -1,3 +1,11 @@
+/* all */
+.language-select{
+  border: 2px solid var(--primary-bg);
+  background-color: rebeccapurple;
+}
+
+
+
 /* small screen */
 @media (max-width: 767px) {
   .container {
@@ -109,9 +117,8 @@
     min-height: 100px;
   }
 
-  /* This selects all input fields of type text, all select elements, and all textareas on the page and applies the following styles:*/
+  /* This selects all input fields of type text, and all textareas on the page and applies the following styles:*/
 input[type=text],
-select,
 textarea {
     width: 100%;
     padding: 12px;
