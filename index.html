@@ -14,35 +14,39 @@
 
 <body>
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-    <div class="navbar" id="test">
+    <div class="navbar">
         <img class="logo" src="Media/Selfie (Large) Trans.png">
         <a class='selected' href="index.html">Home</a>
-        <a href="projecten.html">Projects</a>
+        <a id="projecttitle" href="projecten.html">Projects</a>
         <a href="contact.html">contact</a>
         <img id="duck" class="logo" src="Media/icons/ducks/rubber-duck.png">
+        <select id="language-select">
+            <option value="en">English</option>
+            <option value="nl">Dutch</option>
+        </select>
     </div>
     <div class="container">
         <div class="about-me">
             <a href="index.html">
-                <h1>About Me</h1>
+                <h1 id="aboutmetitle">About Me</h1>
             </a>
             <p id="age"></p>
         </div>
         <div class="selfie"><img src="Media/Selfie (Large) Trans.png"></div>
         <div class="contact">
             <a href="contact.html">
-                <h1>Contact</h1>
+                <h1 id="contact">Contact</h1>
             </a>
-            Get in contact
+            <p id='getincontact'></p>
             <div class="form">
                 <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
                     action="https://formspree.io/f/mwkdqrbv" method="post">
                     <fieldset id="fs-frm-inputs">
-                        <label for="full-name">Full Name</label>
+                        <label id="fullname" for="full-name">Full Name</label>
                         <br>
-                        <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                        <input type="text" name="name" id="full-name" placeholder="David van Hoek" required="">
                         <br>
-                        <label for="email-address">Email Address</label>
+                        <label id="emailaddress" for="email-address">Email Address</label>
                         <br>
                         <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld"
                             required="">
@@ -65,12 +69,12 @@
         </div>
         <div class="projecten">
             <a href="projecten.html">
-                <h1>Projects</h1>
+                <h1 id="projects">Projects</h1>
             </a>
-            <p>I have worked on multiple projects you can see them <a href="projecten.html">here</a></p>
+            <p id="projectdescription">I have worked on multiple projects you can see them <a href="projecten.html">here</a></p>
         </div>
         <div class="footer"></div>
-        </div>
+    </div>
     </div>
 
     <div class="duck">
@@ -84,8 +88,10 @@
     </div>
     </div>
 
-    <script src="javascript/index.js"></script>
+
     <script src="javascript/script.js"></script>
+    <script src="javascript/translate_index.js"></script>
+    <script src="javascript/index.js"></script>
 
 </body>
 

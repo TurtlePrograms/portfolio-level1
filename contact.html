@@ -18,23 +18,27 @@
   <div class="navbar" id="test">
     <img class="logo" src="Media/Selfie (Large) Trans.png">
     <a href="index.html">Home</a>
-    <a href="projecten.html">projecten</a>
+    <a id="projecttitle" href="projecten.html">projecten</a>
     <a class='selected' href="contact.html">contact</a>
     <img id="duck" class="logo" src="Media/icons/ducks/rubber-duck.png">
+    <select id="language-select">
+      <option value="en">English</option>
+      <option value="nl">Dutch</option>
+  </select>
   </div>
   <div class="wrapper">
-    <h1>Get in Contact</h1>
+    <h1 id="getincontact">Get in Contact</h1>
     <div class="container">
       <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mwkdqrbv"
         method="post">
         <fieldset id="fs-frm-inputs">
-          <label for="full-name">Full Name</label>
-          <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-          <label for="email-address">Email Address</label>
+          <label id="fullname" for="full-name">Full Name</label>
+          <input type="text" name="name" id="full-name" placeholder="David van Hoek" required="">
+          <label id="emailaddress" for="email-address">Email Address</label>
           <br>
           <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
           <br>
-          <label for="message">Message</label>
+          <label id="message" for="message">Message</label>
           <textarea rows="5" name="message" id="message"
             placeholder="lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam"
             required=""></textarea>
@@ -43,7 +47,7 @@
         <input type="submit" value="Submit">
       </form>
     </div>
-    <h2>Other ways of Contact:</h2>
+    <h2 id="otherways">Other ways of Contact:</h2>
     <div class="options">
       <div>
         <a href="https://www.linkedin.com/in/david-van-hoek/">
@@ -53,7 +57,7 @@
           <img class="link" id="mail" src="Media/icons/mail.png" alt="mail">
         </a>
       </div>
-      <h2>Get my CV</h2>
+      <h2 id="getcv">Get my CV</h2>
       <div>
         <a href="Media/CV David van Hoek.pdf" download>
           <img class="cv " id="dutch" src="Media/icons/cv.png" alt="cv">
@@ -68,6 +72,7 @@
       <div class="leg"></div>
     </div>
     <script src="javascript/script.js"></script>
+    <script src="javascript/translate_index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,38 @@
+{
+    "en": {
+        "home": "home",
+        "projecttitle": "Projects",
+        "aboutmetitle": "About Me",
+        "contact": "Contact",
+        "getincontact": "Get in contact",
+        "fullname": "Full Name",
+        "emailaddress": "Email Address",
+        "message": "Message",
+        "projects": "Projects",
+        "projectdescription": "I have worked on multiple projects you can see them here",
+        "linkedinbadge": "LinkedIn Profile",
+        "itch-text": "On Itch.io I post my projects that I make in my free time. I make these projects to learn new things and are mainly games. these games are often for game jams or just for fun. and have a general lower quality than my other projects.",
+        "openproject": "Open project",
+        "technotext": "TechnoWire is a website created for 77, 77 is a young and dynamic company with a passion for everything related to IT. TechnoWire aims to transfer IT knowledge in an accessible way to young adults, especially those who do not have a background in ICT.",
+        "otherways": "Other ways of Contact:",
+        "getcv": "Get my CV"
+    },
+    "nl": {
+        "home": "home",
+        "projecttitle": "Projecten",
+        "aboutmetitle": "Over Mij",
+        "contact": "Contact",
+        "getincontact": "Neem contact op",
+        "fullname": "Volledige Naam",
+        "emailaddress": "E-mailadres",
+        "message": "Bericht",
+        "projects": "Projecten",
+        "projectdescription": "Ik heb aan meerdere projecten gewerkt, je kunt ze hier bekijken",
+        "linkedinbadge": "LinkedIn Profiel",
+        "itch-text": "Op Itch.io plaats ik mijn projecten die ik in mijn vrije tijd maak. Dit zijn projecten die ik gebruik om te leren en zijn vaak games voor gamejams. En hebben dus ook een algemeen lagere qualiteit dan mijn andere projecten",
+        "openproject": "Open project",
+        "technotext": "TechnoWire is een website gecre\u00eberd voor 77, 77 is een jong en dynamisch bedrijf met een passie voor alles wat met IT te maken heeft. TechnoWire heeft als doel IT-kennis op een toegankelijke manier over te brengen aan jongvolwassenen, vooral aan degenen die geen achtergrond hebben in ICT.",
+        "otherways": "andere manieren om contact te maken",
+        "getcv": "download mijn CV"
+    }
+}
