@@ -62,7 +62,6 @@ duckImage.addEventListener("click", function () {
       duck[0].style.display = "block";
     } else {
       duck[0].style.display = "none";
-      window.location.replace("test/test.html");
     }
     
     // Reset the click count and clear the timer

@@ -19,7 +19,7 @@ body {
     position: relative;
     vertical-align: top;
     margin: 10px;
-    min-height: 40vh;
+    min-height: 450px;
     background: var(--secundary-bg);
     border: 1px solid var(--text);
     text-align: left;
