@@ -1,5 +1,7 @@
 {
     "en": {
+        "en":"English",
+        "nl":"Dutch",
         "home": "home",
         "projecttitle": "Projects",
         "aboutmetitle": "About Me",
@@ -19,6 +21,8 @@
         "getcv": "Get my CV"
     },
     "nl": {
+        "en":"Engels",
+        "nl":"Nederlands",
         "home": "home",
         "projecttitle": "Projecten",
         "aboutmetitle": "Over Mij",
