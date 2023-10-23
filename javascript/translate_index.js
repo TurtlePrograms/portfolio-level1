@@ -1,4 +1,4 @@
-const languageSelect = document.getElementById("language-select");
+
 console.log(languageSelect)
 
 // Load all translations from a single JSON file

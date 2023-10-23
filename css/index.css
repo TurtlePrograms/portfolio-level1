@@ -19,6 +19,7 @@
       "about-me about-me"
       "projecten projecten"
       "contact contact";
+      max-width: 99vw;
   }
 
   .about-me {
@@ -54,6 +55,14 @@
     border-style: solid none solid none;
     border-width: 2px;
     border-color: var(--secundary-bg);
+  }
+  iframe{
+    width: 98%;
+    height: 50vh;
+    border: none;
+  }
+  #language-select{
+    display: none ;
   }
 }
 
@@ -156,6 +165,7 @@ input[type=submit]:hover {
     height: 200px;
     min-height: 2rem;
 }
+
 
 
 }
