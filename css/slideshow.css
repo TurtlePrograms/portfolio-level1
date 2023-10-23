@@ -92,3 +92,6 @@
 .images img {
     min-height: 50vh;
 }
+.storie{
+    display: none;
+}
