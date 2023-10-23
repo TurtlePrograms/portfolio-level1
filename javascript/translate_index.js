@@ -62,4 +62,10 @@ if (selectedLanguage) {
         languageSelect.querySelector('option[value="nl"]').selected = true;
     }
 }
+else{
+    // Use the default language to update the content
+    console.log("Selected language (else):", selectedLanguage)
+    updateContent("en");
+    languageSelect.querySelector('option[value="en"]').selected = true;
+}
 
