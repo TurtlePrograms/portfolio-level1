@@ -1,14 +1,13 @@
-
-
 /*sets the sizing calculation to include the border*/
 * {
     box-sizing: border-box;
 }
-.wrapper{
+
+.wrapper {
     margin: auto;
     width: 50%;
     padding: 10px;
-  }
+}
 
 /* This selects all input fields of type text, all select elements, and all textareas on the page and applies the following styles:*/
 input[type=text],
@@ -57,20 +56,25 @@ input[type=submit]:hover {
 }
 
 
-.link{
+.link {
     max-width: 50px;
     max-height: 50px;
     border-radius: 10%;
 }
 
 
-.cv{
+.cv {
     max-width: 50px;
     max-height: 50px;
 }
-#dutch{
-    height: 200px;
-  background-color: #cccccc;
-  background-image: linear-gradient(red,red, white,white,blue, blue);    
+
+#dutch {
+    background-image: url("..\\Media\\Flags\\nl.png");
+    background-size: cover;
 }
 
+#english {
+    background-image: url("..\\Media\\Flags\\uk.png");
+    background-size: 50px 50px;
+    filter: grayscale(100%);
+}
