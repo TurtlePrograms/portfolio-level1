@@ -27,8 +27,6 @@ async function loadTranslations() {
 
 // Function to update the content based on the selected language
 async function updateContent() {
-
-
     const translations = await loadTranslations();
 
     if (translations && translations[selectedLanguage]) {

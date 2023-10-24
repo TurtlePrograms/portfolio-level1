@@ -17,8 +17,7 @@ function showSlides(n) {
   let dots = document.getElementsByClassName("dots");
   let captionText = document.getElementById("caption");
   let numberText = document.getElementsByClassName("numberText");
-  let imageText = document.getElementsByClassName("storie");
-  let storydisplay = document.getElementsByClassName("storydisplay");
+
 
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
@@ -33,5 +32,4 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
   numberText.innerHTML = slideIndex + "/" + slides.length;
 
-  storydisplay[0].innerHTML = imageText[slideIndex-1].innerHTML;
 } 
