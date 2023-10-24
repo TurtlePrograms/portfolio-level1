@@ -32,7 +32,6 @@ switch (lang) {
         <p>Hello, I'm David van Hoek, a ${Math.floor(ageInYears)} year-old student software developer living from Amersfoort, the Netherlands. I'm passionate about coding, and the satisfaction of seeing my code come to life is truly rewarding. I'm currently delving into the worlds of HTML, CSS, and JavaScript as part of my school curriculum while also working on my own projects using Python and Godot to bring my ideas to life.</p>
         <p>Outside of the digital realm, I find comfort and inspiration in nature, capturing its beauty through the lens of an old Nikon camera passed down from my parents. Photography, music, and reading are some of my cherished pastimes. Energetic music always gets my spirits up, and I enjoy exploring various genres that match the mood.</p>
         <p>Balancing school, coding, photography, and my other interests is all part of the daily routine. After a day at school, I immerse myself in my own coding projects, often spending my evenings playing games with friends.</p>`;
-        `
         break;
 }
 
