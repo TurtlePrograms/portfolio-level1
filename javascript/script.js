@@ -47,17 +47,13 @@ let timer;
 
 duckImage.addEventListener("click", function () {
   clickCount++;
-  console.log(clickCount);
 
-  if (clickCount === 1) {
+  if (clickCount > 1 && clickCount < 5) {
     // Start a timer to reset the click count after a certain time interval
     timer = setTimeout(() => {
       clickCount = 0;
     }, 2000);
   } else if (clickCount === 5) {
-    // If the duck is clicked 5 times in quick succession
-    console.log(duck[0].style.display)
-    console.log("Duck clicked 5 times in quick succession!");
     if (duck[0].style.display === "none") {
       duck[0].style.display = "block";
     } else {
