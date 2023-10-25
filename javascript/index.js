@@ -13,25 +13,26 @@ console.log(lang, "index.js");
 switch (lang) {
     case 'en':
         var aboutMe = `
-            <h2>David van Hoek</h2>
-            <p>Hello, I'm David van Hoek, a ${Math.floor(ageInYears)} year-old student software developer living from Amersfoort, the Netherlands. I'm passionate about coding, and the satisfaction of seeing my code come to life is truly rewarding. I'm currently delving into the worlds of HTML, CSS, and JavaScript as part of my school curriculum while also working on my own projects using Python and Godot to bring my ideas to life.</p>
-            <p>Outside of the digital realm, I find comfort and inspiration in nature, capturing its beauty through the lens of an old Nikon camera passed down from my parents. Photography, music, and reading are some of my cherished pastimes. Energetic music always gets my spirits up, and I enjoy exploring various genres that match the mood.</p>
-            <p>Balancing school, coding, photography, and my other interests is all part of the daily routine. After a day at school, I immerse myself in my own coding projects, often spending my evenings playing games with friends.</p>`;
+        <h2>David van Hoek</h2>
+        <p>Hello, I'm David van Hoek, an aspiring software developer with a passion for nature and photography. I am currently ${Math.floor(ageInYears)} years old. I began my journey in Software Development at ROC Middle Netherlands in 2023, where I'm diving into HTML, CSS, and JavaScript. I also work on my own projects using Python and the Godot game engine.</p>
+        <p>Aside from my love for code, I hold a deep admiration for nature and enjoy capturing its beauty through my camera lens. If you take a look at my photos, you'll notice that I often focus on nature. If you're interested in my photos, feel free to scroll further; you'll find them there. In my free time, you'll often find me in nature, listening to inspiring music, and immersed in a good book.</p>
+        `;
+        
         break;
     case 'nl':
         var aboutMe = `
-                <h2>David van Hoek</h2>
-                <p>Hallo, ik ben David van Hoek, een ${Math.floor(ageInYears)} jaar oude student softwareontwikkelaar uit Amersfoort, Nederland. Ik ben gepassioneerd over programmeren en de voldoening van het zien tot leven komen van mijn code is echt belonend. Momenteel verdiep ik me in de werelden van HTML, CSS en JavaScript als onderdeel van mijn schoolcurriculum, terwijl ik ook werk aan mijn eigen projecten met behulp van Python en Godot om mijn ideeën tot leven te brengen.</p>
-                <p>Buiten de digitale wereld vind ik comfort en inspiratie in de natuur, waarbij ik de schoonheid vastleg door de lens van een oude Nikon-camera die van mijn ouders is overgedragen. Fotografie, muziek en lezen zijn enkele van mijn gekoesterde vrijetijdsbestedingen. Energieke muziek geeft altijd mijn geest een oppepper, en ik geniet ervan om verschillende genres te verkennen die bij de stemming passen.</p>
-                <p>Het in balans brengen van school, programmeren, fotografie en mijn andere interesses is allemaal onderdeel van mijn dagelijkse routine. Na een dag op school dompel ik mezelf onder in mijn eigen programmeerprojecten en breng ik vaak mijn avonden door met vrienden, waarbij we samen spelletjes spelen.</p>`;
+        <h2>David van Hoek</h2>
+        <p>Hallo, ik ben David van Hoek, een enthousiaste softwareontwikkelaar in de maak met een passie voor de natuur en fotografie. Ik ben nu ${Math.floor(ageInYears)} jaar oud. En ik ben in 2023 begonnen met de opleiding Software Development bij het ROC midden Nederland. Ik ben hier bezig met onder andere HTML, CSS en Javascript. Zelf werk ik aan mijn eigen projectjes met Python en de Godot game engine.</p>
+        <p>Naast mijn liefde voor code, koester ik een diepe bewondering voor de natuur en leg ik graag de schoonheid ervan vast met mijn camera. Als je naar mijn Foto’s kijkt zal je zien dat het vaak de natuur is die ik vastleg, als je geïnteresseerd bent in mijn foto’s scrol dan verder daar zijn ze te vinden. Tijdens mijn vrije uren vind je me vaak in de natuur, luisterend naar inspirerende muziek en verdiept in een goed boek.</p>
+        `;
         break;
 
     default:
         var aboutMe = `
         <h2>David van Hoek</h2>
-        <p>Hello, I'm David van Hoek, a ${Math.floor(ageInYears)} year-old student software developer living from Amersfoort, the Netherlands. I'm passionate about coding, and the satisfaction of seeing my code come to life is truly rewarding. I'm currently delving into the worlds of HTML, CSS, and JavaScript as part of my school curriculum while also working on my own projects using Python and Godot to bring my ideas to life.</p>
-        <p>Outside of the digital realm, I find comfort and inspiration in nature, capturing its beauty through the lens of an old Nikon camera passed down from my parents. Photography, music, and reading are some of my cherished pastimes. Energetic music always gets my spirits up, and I enjoy exploring various genres that match the mood.</p>
-        <p>Balancing school, coding, photography, and my other interests is all part of the daily routine. After a day at school, I immerse myself in my own coding projects, often spending my evenings playing games with friends.</p>`;
+        <p>Hello, I'm David van Hoek, an aspiring software developer with a passion for nature and photography. I am currently ${Math.floor(ageInYears)} years old. I began my journey in Software Development at ROC Middle Netherlands in 2023, where I'm diving into HTML, CSS, and JavaScript. I also work on my own projects using Python and the Godot game engine.</p>
+        <p>Aside from my love for code, I hold a deep admiration for nature and enjoy capturing its beauty through my camera lens. If you take a look at my photos, you'll notice that I often focus on nature. If you're interested in my photos, feel free to scroll further; you'll find them there. In my free time, you'll often find me in nature, listening to inspiring music, and immersed in a good book.</p>
+        `;
         break;
 }
 
