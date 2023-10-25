@@ -1,9 +1,17 @@
+/* all */
+.language-select{
+  border: 2px solid var(--primary-bg);
+  background-color: rebeccapurple;
+}
+
+
+
 /* small screen */
 @media (max-width: 767px) {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: max-content max-content max-content max-content max-content;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -11,6 +19,7 @@
       "about-me about-me"
       "projecten projecten"
       "contact contact";
+      max-width: 99vw;
   }
 
   .about-me {
@@ -27,7 +36,7 @@
     border-color: var(--secundary-bg);
 
     img {
-      max-width: 25vw;
+      max-height: 20vh;
     }
   }
 
@@ -36,6 +45,9 @@
     border-style: solid none solid none;
     border-width: 2px;
     border-color: var(--secundary-bg);
+    .form{
+      max-width: 90vw;
+    }
   }
 
   .projecten {
@@ -43,6 +55,14 @@
     border-style: solid none solid none;
     border-width: 2px;
     border-color: var(--secundary-bg);
+  }
+  iframe{
+    width: 98%;
+    height: 50vh;
+    border: none;
+  }
+  #language-select{
+    display: none ;
   }
 }
 
@@ -55,14 +75,15 @@
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 2fr 1fr 1fr;
+    grid-template-rows: max-content max-content max-content max-content max-content;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       ". selfie about-me ."
       ". selfie about-me ."
       ". projecten contact ."
-      ". projecten contact .";
+      ". projecten contact ."
+      ". footer footer .";
     padding-top: 10px;
   }
 
@@ -100,9 +121,13 @@
     border-color: var(--secundary-bg);
     padding: 5px 5px 5px 5px;
   }
-  /* This selects all input fields of type text, all select elements, and all textareas on the page and applies the following styles:*/
+  .footer{
+    grid-area: footer;
+    min-height: 100px;
+  }
+
+  /* This selects all input fields of type text, and all textareas on the page and applies the following styles:*/
 input[type=text],
-select,
 textarea {
     width: 100%;
     padding: 12px;
@@ -140,6 +165,7 @@ input[type=submit]:hover {
     height: 200px;
     min-height: 2rem;
 }
+
 
 
 }

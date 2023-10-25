@@ -80,3 +80,19 @@ body {
 .duckcontainer {
   display: none;
 }
+
+#language-select{
+  background-color: var(--secondary-bg);
+  border: none;
+  text-decoration: none;
+  min-height: 100%;
+}
+
+
+iframe{
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-decoration: none;
+  
+}
