@@ -99,3 +99,11 @@ iframe{
   text-decoration: none;
   
 }
+.submenu{
+  margin-top: 5px;
+  background-color: var(--navbar-bg);
+  width: max-content;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
