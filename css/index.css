@@ -1,25 +1,24 @@
-/* all */
-.language-select{
-  border: 2px solid var(--primary-bg);
-  background-color: rebeccapurple;
-}
-
-
-
 /* small screen */
 @media (max-width: 767px) {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: max-content max-content max-content max-content max-content;
+    grid-template-rows: max-content max-content max-content max-content max-content max-content;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
+      "submenu submenu"
       "selfie selfie"
       "about-me about-me"
       "projecten projecten"
       "contact contact";
-      max-width: 99vw;
+    max-width: 99vw;
+  }
+
+  .submenu {
+    grid-area: submenu;
+    margin: auto;
+    background-color: var(--secundary-bg);
   }
 
   .about-me {
@@ -45,7 +44,8 @@
     border-style: solid none solid none;
     border-width: 2px;
     border-color: var(--secundary-bg);
-    .form{
+
+    .form {
       max-width: 90vw;
     }
   }
@@ -56,35 +56,40 @@
     border-width: 2px;
     border-color: var(--secundary-bg);
   }
-  iframe{
+
+  iframe {
     width: 98%;
     height: 50vh;
     border: none;
-  }
-  #language-select{
-    display: none ;
   }
 }
 
 
 /* big screen */
 @media (min-width: 768px) {
-  body{
+  body {
     margin: 0px 0px 0px 0px;
   }
+
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: max-content max-content max-content max-content max-content;
     gap: 0px 0px;
-    grid-auto-flow: row;
     grid-template-areas:
+      "submenu submenu submenu submenu"
       ". selfie about-me ."
       ". selfie about-me ."
       ". projecten contact ."
       ". projecten contact ."
       ". footer footer .";
     padding-top: 10px;
+  }
+
+  .submenu {
+    grid-area: submenu;
+    margin: auto;
+    background-color: var(--secundary-bg);
   }
 
   .about-me {
@@ -121,14 +126,15 @@
     border-color: var(--secundary-bg);
     padding: 5px 5px 5px 5px;
   }
-  .footer{
+
+  .footer {
     grid-area: footer;
     min-height: 100px;
   }
 
   /* This selects all input fields of type text, and all textareas on the page and applies the following styles:*/
-input[type=text],
-textarea {
+  input[type=text],
+  textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid var(--primary-bg);
@@ -138,9 +144,9 @@ textarea {
     margin-bottom: 16px;
     resize: vertical;
     /*- Enables vertical resizing of the element*/
-}
+  }
 
-input[type=submit] {
+  input[type=submit] {
     background-color: var(--navbar-bg);
     color: white;
     padding: 12px 20px;
@@ -148,24 +154,30 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     /*updates the curser for the button*/
-}
+  }
 
-input[type=submit]:hover {
+  input[type=submit]:hover {
     background-color: var(--navbar-hover);
-}
+  }
 
-/*create the box for the form*/
-.form {
+  /*create the box for the form*/
+  .form {
     border-radius: 5px;
     background-color: var(--navbar-bg);
     padding: 20px;
-}
+  }
 
-.bericht {
+  .bericht {
     height: 200px;
     min-height: 2rem;
-}
+  }
 
+  .gettoknowme {
+    border: 4px solid var(--secondary-bg);
+    background-color: var(--secondary-bg);
+  }
 
-
+  .gettoknowme img {
+    max-width: 100%;
+  }
 }

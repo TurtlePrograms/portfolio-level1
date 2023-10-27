@@ -1,7 +1,7 @@
 :root {
   --text: #263238; /* Dark Blue-Grey text color */
   --primary-bg: #388E3C; /* Green background color */
-  --secondary-bg: #FFE082; /* Yellow background color */
+  --secondary-bg: #87CEFA; /* Yellow background color */
   --navbar-bg: #4CAF50; /* Leafy Green background color */
   --navbar-hover: #FFD54F; /* Sunflower Yellow hover color */
   --navbar-selected: #EF5350; /* Tomato Red selected color */
@@ -14,6 +14,9 @@
 :is(h1, h2, h3, h4, h5, h6, p) {
   text-align: left;
   color: var(--text);
+}
+h1{
+  color: var(--secondary-bg);
 }
 
 a {
