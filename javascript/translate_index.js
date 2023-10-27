@@ -11,6 +11,7 @@ if ((navigator.language || navigator.userLanguage) != 'null'){
     else{
         languageSelect.querySelector('option[value="en"]').selected = true;
     }
+    updateContent();
 }
 
 // Load all translations from a single JSON file
