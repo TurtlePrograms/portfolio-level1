@@ -106,11 +106,13 @@
     border-width: 2px;
     border-color: var(--secundary-bg);
 
-    img {
-      max-width: 25vw;
-    }
+
   }
 
+  .selfie img {
+    max-width: 25vw;
+  }
+  
   .contact {
     grid-area: contact;
     border-style: solid none solid solid;
