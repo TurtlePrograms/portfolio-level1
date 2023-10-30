@@ -1,19 +1,6 @@
 const languageSelect = document.getElementById("language-select");
 
 
-if ((navigator.language || navigator.userLanguage) != 'null'){
-    if ((navigator.language || navigator.userLanguage).includes("nl")){
-        languageSelect.querySelector('option[value="nl"]').selected = true;
-    }
-    else if ((navigator.language || navigator.userLanguage).includes("en")){
-        languageSelect.querySelector('option[value="en"]').selected = true;
-    }
-    else{
-        languageSelect.querySelector('option[value="en"]').selected = true;
-    }
-    updateContent();
-}
-
 // Load all translations from a single JSON file
 async function loadTranslations() {
     try {
@@ -27,11 +14,18 @@ async function loadTranslations() {
 }
 
 // Function to update the content based on the selected language
-async function updateContent() {
+async function updateContent(override=null) {
+    pickedLanguage = null;
+    if (override != null) {
+        pickedLanguage = override;
+    }
+    else {
+        pickedLanguage = languageSelect.value;
+    }
     const translations = await loadTranslations();
 
-    if (translations && translations[selectedLanguage]) {
-        const translation = translations[selectedLanguage];
+    if (translations && translations[pickedLanguage]) {
+        const translation = translations[pickedLanguage];
         for (const key in translation) {
             const element = document.getElementById(key);
             if (element) {
@@ -51,29 +45,32 @@ languageSelect.addEventListener("change", function () {
     sessionStorage.setItem('selectedLanguage', selectedLanguage);
    
     // Update the content
-    updateContent(selectedLanguage);
+    updateContent();
     location.reload(); 
 });
 
-// Retrieve the selected language from local storage on page load
 const selectedLanguage = sessionStorage.getItem('selectedLanguage');
 
-// Check if the selected language exists in local storage
-if (selectedLanguage) {
-    // Use the selected language to update the content
-    
-    updateContent(selectedLanguage);
-
-    if (selectedLanguage == "en") {
+if (selectedLanguage != null) {
+    updateContent();
+    if (selectedLanguage === "en") {
         languageSelect.querySelector('option[value="en"]').selected = true;
-    }
-    else if (selectedLanguage == "nl") {
+    } else if (selectedLanguage === "nl") {
         languageSelect.querySelector('option[value="nl"]').selected = true;
     }
-}
-else{
+} else {
     // Use the default language to update the content
-    updateContent("en");
-    languageSelect.querySelector('option[value="en"]').selected = true;
+    updateContent();
+    languageSelect.querySelector('option[value="nl"]').selected = true;
+
+    // Set a flag in local storage to indicate that the default language has been set
+    sessionStorage.setItem('defaultLanguageSet', 'true');
 }
 
+// Check if the default language has been set
+const defaultLanguageSet = sessionStorage.getItem('defaultLanguageSet');
+if (!defaultLanguageSet) {
+    // If not set, reload the page
+    location.reload();
+}
+updateContent();
