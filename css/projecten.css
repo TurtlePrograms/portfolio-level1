@@ -57,6 +57,7 @@ body {
     color: var(--text);
     margin-top: 5px;
 }
+
 /* hides button */
 .tilesWrap li button {
     background: transparent;
@@ -71,10 +72,12 @@ body {
     cursor: pointer;
     overflow: hidden;
 }
-.github{
+
+.github {
     max-width: 15px;
     max-height: 15px;
 }
+
 /* setup hover for  buttons */
 .tilesWrap li button:before {
     content: '';
@@ -95,6 +98,7 @@ body {
     transform: translateY(5px);
     opacity: 1;
 }
+
 /* changes background when button hovered */
 .tilesWrap li button:hover {
     background-color: var(--primary-bg);
@@ -105,6 +109,7 @@ body {
     left: 0;
     opacity: 1;
 }
+
 /* moves title into view when card is hovered */
 .tilesWrap li:hover h2 {
     top: 0px;
@@ -145,22 +150,24 @@ body {
 
 
 /* tags styling */
-.tags{
+.tags {
     transition: all 0.3s ease-in-out;
-    span{
+
+    span {
         background-color: var(--navbar-hover);
         padding: 5px 10px;
         border: 2px solid var(--secundary-bg);
     }
-    img{
-        margin-top: 10px;
-        max-width: 220px;
-        max-height: 50px;
-    }
+
 }
 
-.tilesWrap li:hover .tags{
+.tags img {
+    margin-top: 10px;
+    max-width: 220px;
+    max-height: 50px;
+}
+
+.tilesWrap li:hover .tags {
     opacity: 0;
     transform: translateY(40px);
 }
-
