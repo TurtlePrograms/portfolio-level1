@@ -1,14 +1,13 @@
 :root {
-  --text: #263238; /* Dark Blue-Grey text color */
-  --primary-bg: #388E3C; /* Green background color */
-  --secondary-bg: #87CEFA; /* Yellow background color */
-  --navbar-bg: #4CAF50; /* Leafy Green background color */
-  --navbar-hover: #FFD54F; /* Sunflower Yellow hover color */
-  --navbar-selected: #EF5350; /* Tomato Red selected color */
-  --grad-main: var(--navbar-bg); /* Gradient start color */
-  --grad-secundair: var(--navbar-bg); /* Gradient end color */
+  --text: #263238;
+  --primary-bg: #388E3C;
+  --secondary-bg: #87CEFA;
+  --navbar-bg: #4CAF50;
+  --navbar-hover: #FFD54F;
+  --navbar-selected: #EF5350;
+  --grad-main: var(--navbar-bg);
+  --grad-secundair: var(--navbar-bg);
 }
-
 
 /* set all text to the correct color and to the left */
 :is(h1, h2, h3, h4, h5, h6, p) {
