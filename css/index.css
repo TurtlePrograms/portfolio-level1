@@ -73,8 +73,8 @@
 
   .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: max-content max-content max-content max-content max-content;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-rows: max-content 50vh 50vh 60vh max-content;
     gap: 0px 0px;
     grid-template-areas:
       "submenu submenu submenu submenu"
@@ -110,12 +110,13 @@
   }
 
   .selfie img {
-    max-width: 25vw;
+    height: auto;
+    max-width: 100%;
   }
   
   .contact {
     grid-area: contact;
-    border-style: solid none solid solid;
+    border-style: solid none none solid;
     border-width: 2px;
     border-color: var(--secundary-bg);
     padding: 5px 5px 5px 5px;
@@ -123,7 +124,7 @@
 
   .projecten {
     grid-area: projecten;
-    border-style: solid none solid none;
+    border-style: solid none none none;
     border-width: 2px;
     border-color: var(--secundary-bg);
     padding: 5px 5px 5px 5px;
