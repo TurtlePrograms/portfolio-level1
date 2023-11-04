@@ -113,7 +113,7 @@
     height: auto;
     max-width: 100%;
   }
-  
+
   .contact {
     grid-area: contact;
     border-style: solid none none solid;
@@ -176,11 +176,24 @@
   }
 
   .gettoknowme {
-    border: 4px solid var(--secondary-bg);
+    border-radius: 5%;
+    border: 10px solid var(--secondary-bg);
     background-color: var(--secondary-bg);
+    box-shadow: 10px 10px var(--navbar-bg);
+
+    transition: all 0.5s ease-in-out;
   }
+
+  .gettoknowme:hover {
+    border: 10px solid var(--navbar-hover);
+    background-color: var(--navbar-hover);
+    box-shadow: 10px 10px var(--navbar-bg);
+  }
+
+
 
   .gettoknowme img {
     max-width: 100%;
+    border-radius: 2.5%;
   }
 }
